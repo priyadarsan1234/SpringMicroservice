@@ -1,0 +1,33 @@
+server:
+  port: 8085
+
+spring:
+  application:
+    name: API-GATEWAY
+  cloud:
+    gateway:
+      routes:
+      - id: PRODUCT-SERVICE	
+        uri: lb://Product-service
+        predicates:
+        - Path=/product/**,/staffs/**
+
+      - id: CART-SERVICE
+        uri: lb://Cart-Service
+        predicates:
+        - Path=/cart/**
+
+      - id: USERSERVICE
+        uri: lb://UserService
+        predicates:
+        - Path=/users/**
+
+
+eureka:
+  instance: 
+    prefer-ip-address: true
+  client:
+    register-with-eureka: true 
+    fetch-registry: true
+  service-url:
+    defaultZone: http://localhost:8761/eureka

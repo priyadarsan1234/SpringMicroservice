@@ -1,0 +1,108 @@
+/* Cart.css */
+.container {
+    padding: 40px;
+    font-family: 'Arial', sans-serif;
+    width: 96%; /* Centering and limiting width */
+    margin: 0 auto; /* Center alignment */
+  }
+  
+  .product-containercart {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 12px;
+    margin-top: 20px; /* Space above */
+  }
+  
+  .product-cardcart {
+    border-radius: 12px;
+    overflow: hidden;
+    width: 300px; /* Wider card */
+    transition: transform 0.3s, box-shadow 0.3s;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    position: relative; /* For absolute positioning of buttons */
+  }
+  
+  .product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  }
+  
+  .image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 12px 12px 0 0;
+  }
+  
+  .product-info {
+    padding: 20px;
+  }
+  
+  .product-name {
+    color: #333;
+    font-size: 17px; /* Slightly larger */
+    font-weight: bold;
+    margin: 0 0 10px;
+  }
+  
+  .product-price {
+    font-size: 18px;
+    color: #007bff; /* Price in a distinctive color */
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: space-between; /* Space between buttons */
+    margin-top: 15px;
+  }
+  
+  .button {
+    padding: 12px 20px; /* Larger padding */
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px; /* Bigger font size */
+    transition: background-color 0.3s;
+    width: 48%; /* Make buttons the same width */
+  }
+  
+  .button.buy {
+    background-color: #28a745; /* Green */
+    color: #fff;
+  }
+  
+  .button.buy:hover {
+    background-color: #218838; /* Darker green on hover */
+  }
+  
+  .button.remove {
+    background-color: #dc3545; /* Red */
+    color: #fff;
+  }
+  
+  .button.remove:hover {
+    background-color: #c82333; /* Darker red on hover */
+  }
+  
+  .loading,
+  .error {
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0;
+  }
+  
+  .loading {
+    color: #555;
+  }
+  
+  .error {
+    color: red;
+    font-weight: bold;
+  }
+  

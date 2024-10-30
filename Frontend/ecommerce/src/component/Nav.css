@@ -1,0 +1,46 @@
+nav {
+    background-color: #1a1a2e;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    color: white;
+    margin-bottom: 10px;
+}
+
+nav h1 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #f0f0f0;
+    margin: 0;
+    
+}
+
+nav .second {
+    display: flex;
+    gap: 20px;
+}
+
+nav .second div {
+    margin: 0;
+}
+Link {
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none; /* Remove underline */
+    color:white;
+    transition: color 0.3s ease;
+    padding: 8px 16px;
+    border-radius: 5px;
+}
+p{
+    text-decoration: none;
+}
+
+nav .second p a:hover {
+    color: #fff;
+    background-color: #e94560;
+}
