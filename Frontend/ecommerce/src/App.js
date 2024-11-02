@@ -5,6 +5,7 @@ import Home from './component/Home';
 import Cart from './component/Cart';
 import Category from './component/Category';
 import View from './component/View';
+import Search from './component/Search';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/" element={<Home />} /> 
         <Route path="/cart" element={<Cart />} />
         <Route path="/category/:category" element={<Category />} />
+        <Route path="/search" element={<Search />} />
         <Route path="/product/:id" element={<View />} />
       </Routes>
     </Router>

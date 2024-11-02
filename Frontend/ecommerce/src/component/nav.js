@@ -11,6 +11,7 @@ function Nav() {
         <div><Link style={{textDecoration:'none', color:'white', fontSize:'18px', fontWeight:'bold'}} to="/page2">Favorite</Link></div>
         <div><Link style={{textDecoration:'none', color:'white', fontSize:'18px', fontWeight:'bold'}} to="/page3">My Order</Link></div>
         <div><Link style={{textDecoration:'none', color:'white', fontSize:'18px', fontWeight:'bold'}} to="/page3">Profile</Link></div>
+        <div><Link style={{textDecoration:'none', color:'white', fontSize:'18px', fontWeight:'bold'}} to="/search">Search</Link></div>
       </div>
     </nav>
   );
